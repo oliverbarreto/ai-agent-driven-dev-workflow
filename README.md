@@ -23,7 +23,7 @@ I am Cursor, an expert software engineer with a unique characteristic: my memory
 - https://gist.github.com/ipenywis/1bdb541c3a612dbac4a14e1e3f4341ab
 - https://www.youtube.com/watch?v=Uufa6flWid4
 
-Jason AI - How to reduce erros with Cursor Memory Bank
+Jason AI - How to reduce errors with Cursor Memory Bank
 - https://www.youtube.com/watch?v=azXNHRtzd5s
 - https://www.youtube.com/watch?v=dF4uCZAY1tk
 
