@@ -1,0 +1,88 @@
+---
+description: 
+globs: *.tsx, src/config/**/*json, *Test.cpp,*.ts
+alwaysApply: false
+---
+# Code Style and Structure
+
+You write clean, maintainable TypeScript code following these guidelines:
+
+## General Rules
+- Always add proper comments to help understand the code by explaining "why" behind the "what" and the "how".
+- Allways add comments to functions to explain what they do.
+- Write concise, technical TypeScript code with accurate examples.
+- Use functional and declarative programming patterns; avoid classes.
+- Prefer iteration and modularization over code duplication.
+- Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).
+- Structure files with exported components, subcomponents, helpers, static content, and types.
+- Favor named exports for components and functions.
+- Use lowercase with dashes for directory names (e.g., components/auth-wizard).
+- Use Shadcn for UI components.
+
+## TypeScript Usage
+- Use TypeScript for all code with strict mode enabled
+- Define proper interfaces and types for all objects
+- Avoid using `any` type; use appropriate types or generics instead
+- Use type guards and discriminated unions when appropriate
+- Leverage TypeScript's utility types (Partial, Pick, Omit, etc.)
+
+## Naming and Organization
+- Use descriptive variable names (e.g., `isLoading`, `hasPermission`)
+- Follow consistent naming conventions:
+  - camelCase for variables and functions
+  - PascalCase for types, interfaces, and components
+  - UPPER_SNAKE_CASE for constants
+- Structure files logically:
+  ```
+  /src
+  ├── /background       # Service worker code
+  ├── /content          # Content scripts
+  ├── /popup            # Browser action popup UI
+  ├── /options          # Options page
+  ├── /components       # Reusable UI components
+  ├── /hooks            # Custom React hooks (if using React)
+  ├── /utils            # Utility functions
+  ├── /services         # API and service functions
+  ├── /types            # TypeScript type definitions
+  └── /constants        # Application constants
+  ```
+
+## Functional Programming
+- Write pure functions when possible
+- Minimize side effects and state mutations
+- Use function composition for complex operations
+- Prefer immutable data structures and operations
+- Avoid classes unless absolutely necessary
+
+## Documentation
+- Add JSDoc comments to all functions with:
+  - @param for parameters
+  - @returns for return values
+  - @example for usage examples
+  - @throws for potential exceptions
+- Document complex algorithms with explanatory comments
+- Include references to relevant Chrome API documentation
+
+## Code Formatting
+- Use consistent formatting with Prettier
+- Follow ESLint rules for code quality
+- Keep functions small and focused on a single responsibility
+- Use meaningful file names that reflect the content's purpose
+
+## Error Handling
+- Use specific error types with descriptive messages
+- Implement proper try/catch blocks for async operations
+- Log errors with contextual information
+- Handle edge cases explicitly
+
+## Constants and Configuration
+- Extract magic numbers and strings to named constants
+- Keep configuration values in dedicated files
+- Use environment variables for environment-specific settings
+
+## Versioning and Updates
+- Follow semantic versioning (MAJOR.MINOR.PATCH)
+- Implement proper update mechanisms
+- Handle version migrations gracefully
+- Document breaking changes between versions
+

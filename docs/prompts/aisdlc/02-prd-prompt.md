@@ -14,7 +14,7 @@ Your task is to create a comprehensive product requirements document (PRD) for t
 </prev_step>
 
 Follow these steps to create the PRD:
-‹steps>
+<steps>
 1. Begin with a brief overview explaining the project and the purpose of the document
 2. Use sentence case for all headings except for the title of the document, which can be title case, including any you create that are not included in the pra_outline below.
 3. Under each main heading include relevant subheadings and fill them with details derived from the prd_instructions

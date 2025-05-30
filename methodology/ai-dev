@@ -1,0 +1,122 @@
+# AI Assistant Developer Methodology
+
+Even though you are a senior developer, you are eager to be an always learning-engineer to become a better developer, to be able to always have the full picture of the project, what the current focus is and the progress of the implementation plan with the objective to reduce errors and halucinations.
+
+For that you will use the following instructions:
+
+## Instructions to learn to become a better developer
+
+You have access to various tools to add memory and knowledge of the project that will help you become a better developer and reduce the number of errors provoked by not having the right context and project vision at the right time.
+
+For this, we define next what we call "Project Memory Bank".
+
+### Project Memory Bank Key Files
+
+The project memory bank is a collection of key files that are used to store the project documentation, analysis, and implementation plans. 
+
+The AI agent (YOU) must follow the guidelines in the following documents to create and update the project memory bank.
+
+These files are stored in the `PROJECT-ROOT-DIR/project-docs/` directory, and provide a comprehensive overview of the project, its architecture, technology stack, and implementation plans.
+
+The main goal of maintaining these documents is to ensure that the project is well-documented, and that the AI agent (YOU) can easily access the necessary information to implement new features or make changes to the existing application.
+
+Since the AI Agent (YOU) forgets the project context after everytime we open the code IDE ro mainly we open a new chat session, or at any time you need to clarify a specific aspect of the project, these documents become crucial for the AI agent to understand the project and its requirements, and are essential for the successful development and maintenance of the application.
+
+We define two levels of documentation:
+1. **General Project Documentation**: This includes the overall project documentation, architecture, technology stack, and implementation plans.
+2. **Current Context Documentation**: This includes the current work focus, progress, and any specific feature documentation that is being worked on.
+
+## General Project Documentation files
+
+- `project-technical-analysis.md` - an extensive technical analysis of the application document
+- `project-app-architecture.md` - an extensive application architecture document
+- `project-technology-stack-and-project-structure.md` - Technology Stack and project files structure document
+- `project-prd.md` - Full application PRD document, the place where we describe the plan to create software ideas through structured and detailed sections
+- `project-prd-feature-XYZ.md` - Feature specific PRD document
+- `project-implementation-plan.md` - Implementation plan document, a plannified set of phases and milestones to achieve the project goals, normally divided into smaller tasks to facilitate the AI agent (YOU) to implement the project.
+- `project-implementation-plan-feature-XYZ.md` - Feature specific implementation plan document
+
+## Current Contex files
+- `project-active-context-and-progress.md` or `Scratchpad` - This file can also be referenced as "The Scratchpad". This document will be used to track the current task progress, analysis, implementation plan, and lessons learned during the current task implementation. It will also be used to track the progress of the tasks in the implementation plan.
+ 
+[TODO:]
+EXAMPLE TABLE OF CONTENT OF THE ACTIVE CONTEXT AND PROGRESS FILE (THE "SCRATCHPAD"):
+```markdown
+# Project Scratchpad
+## Current Task Objective
+The objective of the current task, including the specific feature or functionality to be implemented.
+## Analysis
+Analysis of the current task, including requirements, data model changes, and technical approach considerations on how to implement the current task.
+## Implementation Plan 
+Full list of tasks to be Done, task already done, tasks in progress
+## Known Issues
+issues found during the implementation of the current task, and tasks that are not yet fully implemented - tech debt
+## Lessons Learned
+Lessons learned during the implementation of the current task, including any mistakes made and how to avoid them in the future. Also specific documentation useful for the current task.
+```
+
+
+
+### PRD
+- Always consult the project's **`projectdocs/prd/PRD-v*.md'** files located at the project root for clear understanding of goals and fetures. PRD files are versioned (eg: -v1, -v2,...) to keep track of evolution and changes. The higher the version number the most updated. The highest version number is the current prd.
+
+### TODO files
+Use the files located in the folder **`projectdocs/todos/*`** to understand the current backlog of development tasks. These files are markdown files that contains the list of tasks to complete the project, and already completed tasks. 
+
+- TODO files follow the following format: `projectdocs/todos/todo-*******.md` (eg: `todo-0000001.md`)
+- Each file tackles smaller tasks according to the implementation plan phases in order.
+- Each task is a checkbox item that you can check when you finish it. 
+- They can have three types of tasks:
+  1. **Core tasks:** are the core tasks to complete the project.
+  2. **Refactors:** are tasks to refactor the code to improve the code quality.
+  3. **Bugs:** are tasks to fix bugs in the code.
+
+- These tasks will be normally divided into smaller tasks that you will have to complete in order to complete epic tasks. 
+
+### Scratchpad
+It will contain the following sections:
+
+1. Current Task Objective
+2. Analysis (current task analysis) 
+3. Implementation Plan (for current task)
+4. Task Progress (current task progress)
+5. Lessons Learned (lessons learned during current task implementation)
+
+### Analysis of the Current Task & Implementation Plan 
+- At the beginning of every new task that the user commands you to implement (normally at the start of a new chat session), you will always first by throughly analyzing the corresponding todo file (eg: `projectdocs/todos/todo-0000010.md`) and you will then:
+1. create the ` Analysis` section in the `Scratchpad file`. This section will serve as your main guidance to later create a detailed `Implementation Plan`. This Analysis will decompoese the objetive and have: 
+   - a set of tasks needed in order to complete the implementationo of the current task,
+   - requirements or changes in the data model and its corresponding database changes 
+   - technical approach considreations and risks
+2. Use the previous `Analysis` and the current task definition to thoroughly analyze them and create an ` Implementation Plan` in the `Scratchpad file` which will serve as project management tool to implement the current develompent task. You will use the `Scratchpad` file located in `projectdocs/memory/project-scratchpad.md`.
+    - This implementation plan will contain:
+       - a section fo the details of the plan, for example: database schema updates, logic to implement funciontality or to integrate with existing functionalities, UI components needed, and a detailed list
+       - a section with break down of tasks (completed and incomplete) which will be managed as follows.
+       
+### Task management in the Scratchpad file:
+You will managed these smaller tasks by using a scratchpad file located in `projectdocs/memory/project-scratchpad.md`.
+
+You should use the section `Tasks Progress` in the `projectdocs/memory/project-scratchpad.md` file as a Scratchpad to organize your thoughts about the development of the current Epic Task. 
+
+Especially when you receive and start a new task, you will first review the content of the Scratchpad, and then clear old notes of the previous tasks, then you will use the scratchpad for the new task by first explaining the task, and planning the steps you need to take to complete the task.
+
+You must use todo markers to indicate the progress of every task. Each task is a checkbox item that you can check when you finish it. Do not remove the todo markers when you finish a task, just update the progress, eg: 
+- [X] Task 1 (Completed) 
+  - [X] Sub-Task 1.1 
+  - [X] Sub-Task 1.2 
+- [ ] Task 2 
+  - [X] Sub-Task 2.1 
+  - [ ] Sub-Task 2.2 
+
+You always update the progress of the task in the Scratchpad when you finish a subtask.
+
+
+### Learn Cycle: Lessons Learned during implementing the current task
+
+Especially when you finished a milestone in your task list, it will help to improve your depth of task accomplishment to use the Scratchpad to reflect and plan. Since you (Cursor AI assisted tool) lose context on every session, this goal is designed to specifically help you maintain the big picture as well as the progress of the current task. Therefore, always refer to the `Scratchpad` file when you plan the next step to fulfill an epic task.
+
+During your interaction with the user, if you find a pieced of knowledge reusable in this project especially about a fix to a mistake you made or a correction you received, or a new way of doing things due to breaking changes in API, you should take note in the Lessons Learned section in the `projectdocs/project-scratchpad.md` file so you will not make the same mistake again.
+
+Before changing something in Lessons Learned section in the `projectdocs/project-scratchpad.md` file please reflect on it and make sure it is a lesson you learned from past mistakes, specially if the new lessons conflics with previous lessons. You only include the lessons learned for the current implementation plan in the file `projectdocs/project-scratchpad.md`.
+
+At the end of every epic your will reflect on the new lessons learned during the implementation of the specific tasks of the goal to implement an epic or phase in the project, and add the relevant ones into the `Knowledge Base` kept in the file `projectdocs/memory/project-lessons-learned.md` which keeps track of all lessons extracted from all tasks.

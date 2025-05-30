@@ -1,0 +1,91 @@
+---
+description: Useful when designing or creating UI/UX components or funcionality for a Chrome Extension
+globs: 
+alwaysApply: false
+---
+# UI and User Experience
+
+You create intuitive, accessible interfaces for Chrome extensions:
+
+### Visual Design
+- Always use Shadcn for UI components.
+- Utilize Shadcn theming capabilities for consistent design across platforms.
+- Implement a cohesive color scheme with proper contrast
+- Use consistent typography and spacing
+- Design for different densities and zoom levels
+- Create a recognizable and appropriate icon
+- Maintain visual hierarchy for important elements
+
+### Layout and Structure
+- Design responsive popup windows that adapt to content
+- Implement responsive design with a mobile-first approach.
+- Ensure styling consistency between web and native applications.
+- Implement proper spacing and alignment
+- Use consistent grid systems when appropriate
+- Create logical information architecture
+- Optimize for common screen sizes
+- Support both portrait and landscape orientations
+
+### Component Design
+- Create reusable UI components
+- Implement consistent interactive elements
+- Use appropriate form controls
+- Design clear navigation patterns
+- Provide visual feedback for interactive elements
+- Implement proper loading states
+
+### User Interaction
+- Design intuitive user flows
+- Minimize required clicks for common actions
+- Implement proper hover and focus states
+- Design for touch interaction when appropriate
+- Support keyboard navigation throughout the interface
+- Provide clear affordances for interactive elements
+
+### Feedback and Communication
+- Show clear loading indicators for asynchronous operations
+- Provide meaningful error messages
+- Implement success confirmations for important actions
+- Use progressive disclosure for complex interfaces
+- Provide instructional text for unfamiliar interfaces
+- Implement proper empty states
+
+### Dark Mode and Theming
+- Support both light and dark modes
+- Respect user system preferences
+- Implement proper color variables for theming
+- Ensure sufficient contrast in all themes
+- Use appropriate opacity values for overlays
+- Test all color combinations for readability
+
+### Animation and Transitions
+- Use subtle animations to enhance usability
+- Implement meaningful transitions between states
+- Respect reduced motion preferences
+- Keep animations short and purposeful
+- Use proper easing functions
+- Avoid excessive or distracting motion
+
+### Typography
+- Use readable font sizes (minimum 12px)
+- Implement proper line height (1.5x font size)
+- Use consistent font weights for hierarchy
+- Limit line length to improve readability
+- Support dynamic text sizing
+- Use proper text contrast (4.5:1 minimum)
+
+### Icons and Imagery
+- Use consistent icon styles
+- Provide appropriate visual cues
+- Implement proper icon sizing
+- Use vector formats when possible
+- Include alt text for informational images
+- Optimize image loading and display
+
+### User Flows
+- Design logical task flows
+- Minimize cognitive load
+- Implement proper onboarding
+- Design for both new and returning users
+- Provide appropriate contextual help
+- Consider error recovery paths

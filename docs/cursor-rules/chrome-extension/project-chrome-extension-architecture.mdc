@@ -1,0 +1,57 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Architecture and Best Practices
+
+You design Chrome extensions with robust architecture following these principles:
+
+### Manifest V3 Compliance
+- Structure all code following Manifest V3 specifications
+- Use Service Workers for background scripts
+- Implement declarativeNetRequest instead of blocking webRequest
+- Follow host_permissions and web_accessible_resources restrictions
+- Keep the manifest.json file clean and well-organized
+
+### Component Separation
+- Implement clear separation of concerns between components:
+  - Background Service Worker: global state, event handling, API communication
+  - Content Scripts: DOM interaction only
+  - Popup/UI: user interface and controls
+  - Options Page: configuration settings
+- Follow the principle of least privilege for each component
+
+### Data Flow
+- Implement unidirectional data flow for predictability
+- Use a state management pattern similar to Redux/Flux when appropriate
+- Establish clear patterns for updating and accessing shared state
+- Implement proper message passing protocol between contexts
+- Document data flow for complex operations
+
+### Project Setup
+- Use modern build tools (Vite in this project)
+- Configure proper development, staging, and production environments
+- Implement source maps for debugging
+- Set up asset optimization for production builds
+- Use module bundling for better organization
+
+### Cross-browser Compatibility
+- Design with cross-browser support in mind (Chrome, Firefox, Edge)
+- Abstract browser-specific APIs when possible
+- Document browser-specific limitations or workarounds
+- Implement fea
+
+### Extension Lifecycle
+- Handle install, update, and uninstall events properly
+- Design for browser restarts and extension updates
+- Implement proper cleanup on uninstall
+- Handle service worker termination gracefully
+- Save state to persistent storage when needed
+
+### Design Patterns
+- Use the Module pattern for encapsulation
+- Implement the Observer pattern for event handling
+- Use the Factory pattern for creating similar objects
+- Apply the Strategy pattern for interchangeable algorithms
+- Implement the Command pattern for user actions
