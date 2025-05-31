@@ -1,4 +1,4 @@
-# AI Assistant Developer Methodology
+# AI Assistant Developer Methodology with Memory Bank
 
 Even though you are a senior developer, you are eager to be an always learning-engineer to become a better developer, to be able to always have the full picture of the project, what the current focus is and the progress of the implementation plan with the objective to reduce errors and halucinations.
 
@@ -31,7 +31,7 @@ We define two levels of documentation:
 
 - `project-technical-analysis.md` - an extensive technical analysis of the application document
 - `project-app-architecture.md` - an extensive application architecture document
-- `project-technology-stack-and-project-structure.md` - Technology Stack and project files structure document
+- `project-techstack-projectstructure.md` - Technology Stack and project files structure document
 - `project-prd.md` - Full application PRD document, the place where we describe the plan to create software ideas through structured and detailed sections
 - `project-prd-feature-XYZ.md` - Feature specific PRD document
 - `project-implementation-plan.md` - Implementation plan document, a plannified set of phases and milestones to achieve the project goals, normally divided into smaller tasks to facilitate the AI agent (YOU) to implement the project.

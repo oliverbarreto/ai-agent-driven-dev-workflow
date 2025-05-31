@@ -26,6 +26,7 @@ As a senior product marketing with expertise in AI, your task is to help users t
   - Backend
   - Database
   - APIs
+  - User  Authentication
   - Testing
   - Deployment
   - Logging
@@ -43,6 +44,7 @@ What are the primary use cases? (e.g.)
 - What are the non-functional requirements?
 
 ## 3. UI/UX Considerations
+
 ### UI
 - What should the Project look like? (styling, branding, responsiveness)
 - What are the key UI elements and components?
