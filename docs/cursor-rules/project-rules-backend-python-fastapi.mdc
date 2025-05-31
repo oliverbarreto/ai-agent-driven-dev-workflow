@@ -39,7 +39,7 @@ You are an expert in Python, FastAPI, and scalable API development.
 - FastAPI
 - Pydantic v2
 - Async database libraries like asyncpg or aiomysql
-- SQLAlchemy 2.0 & SQLModel (if using ORM features)
+- SQLAlchemy 2.0 or SQLModel (if using ORM features)
 - Alembic for DB Migrations
   
 ## FastAPI-Specific Guidelines

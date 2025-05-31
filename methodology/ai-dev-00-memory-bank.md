@@ -1,4 +1,16 @@
-## Project Memory Bank Key Files
+# AI Assistant Developer Methodology
+
+Even though you are a senior developer, you are eager to be an always learning-engineer to become a better developer, to be able to always have the full picture of the project, what the current focus is and the progress of the implementation plan with the objective to reduce errors and halucinations.
+
+For that you will use the following instructions:
+
+## Instructions to learn to become a better developer
+
+You have access to various tools to add memory and knowledge of the project that will help you become a better developer and reduce the number of errors provoked by not having the right context and project vision at the right time.
+
+For this, we define next what we call "Project Memory Bank".
+
+### Project Memory Bank Key Files
 
 The project memory bank is a collection of key files that are used to store the project documentation, analysis, and implementation plans. 
 
@@ -11,21 +23,78 @@ The main goal of maintaining these documents is to ensure that the project is we
 Since the AI Agent (YOU) forgets the project context after everytime we open the code IDE ro mainly we open a new chat session, or at any time you need to clarify a specific aspect of the project, these documents become crucial for the AI agent to understand the project and its requirements, and are essential for the successful development and maintenance of the application.
 
 We define two levels of documentation:
-1. **General Project Documentation**: This includes the overall project documentation, architecture, technology stack, and implementation plans.
+1. **Detailed Project Documentation**: This includes the overall project documentation, architecture, technology stack, and implementation plans.
 2. **Current Context Documentation**: This includes the current work focus, progress, and any specific feature documentation that is being worked on.
+3. **Project Management Documentation**: This includes the project management documentation, such as recopilation of TODO files which normally track the progress of tasks and issues developed on a given day. 
 
-## General Project Documentation files
+#### General Project Documentation files
 
-- `project-technical-analysis.md` - technical analysis of the application document
-- `project-app-architecture.md` - application architecture document
-- `project-technology-stack-and-project-structure.md` - Technology Stack and project structure document
-- `project-prd.md` - Full application PRD document
+- `project-technical-analysis.md` - an extensive technical analysis of the application document
+- `project-app-architecture.md` - an extensive application architecture document
+- `project-technology-stack-and-project-structure.md` - Technology Stack and project files structure document
+- `project-prd.md` - Full application PRD document, the place where we describe the plan to create software ideas through structured and detailed sections
 - `project-prd-feature-XYZ.md` - Feature specific PRD document
-- `project-implementation-plan.md` - Implementation plan document
+- `project-implementation-plan.md` - Implementation plan document, a plannified set of phases and milestones to achieve the project goals, normally divided into smaller tasks to facilitate the AI agent (YOU) to implement the project.
 - `project-implementation-plan-feature-XYZ.md` - Feature specific implementation plan document
 
-## Current Context files
-- `project-active-context-and-progress.md` - This file will hold information of the current context can also be referenced as "The Scratchpad" includes the current work focus, current implementation knowledge and progress tracking.
- 
+#### Current Contex file: "The Scratchpad"
+- `project-active-context-and-progress.md` or `Scratchpad` - This file can also be referenced as "The Scratchpad". This document will be used to track the current task progress, analysis, implementation plan, and lessons learned during the current task implementation. It will also be used to track the progress of the tasks in the implementation plan.
 
+The AI agent (YOU) must follow the guidelines to use `the Scratchpad` included below on this document since it describes the methodology you must follow to implement the project tasks and how to use the Scratchpad file to track the progress of the current task.
+
+#### Project Management Documentation files
+- TODO files are markdown files located in the `projectdocs/todos/` directory, and provide a list of tasks to complete the project, and already completed tasks. It's a backlog of development tasks.
+- TODO files follow the following format: `projectdocs/todos/todo-*******.md` (eg: `todo-0000001.md`)
+
+### Scratchpad
+It can be interpreted as a living document, which varies as tre AI Assistant makes progress on a given task from the implementation plan. 
+
+It will contain the following sections:
+
+**TABLE OF CONTENT OF "THE SCRATCHPAD":**
+
+```markdown
+# Project Scratchpad
+## Current Task Objective
+The objective of the current task, including the specific feature or functionality to be implemented.
+## Analysis
+Analysis of the current task, including requirements, data model changes, and technical approach considerations on how to implement the current task.
+## Implementation Plan 
+Full list of tasks to be Done, task already done, tasks in progress
+## Known Issues
+issues found during the implementation of the current task, and tasks that are not yet fully implemented - tech debt
+## Lessons Learned
+Lessons learned during the implementation of the current task, including any mistakes made and how to avoid them in the future. Also specific documentation useful for the current task.
+```
+
+### Always Learning Methodology: Analysis of the Current Task & Implementation Plan
+
+The AI agent (YOU) must follow the next rules: At the beginning of every new task that the user commands you to implement (normally at the start of a new chat session), you will always first by throughly analyzing the corresponding implementation plan section, or a feature specific implementation plan, and you will then:
+
+1. You will start by creating (or reseting) the structure of "The Scratchpad" (`project-active-context-and-progress.md`)
+2. Then you will conduct an extensive analysis of the task requested to understand the task and have very detailed context.
+3. You will then proceed to fill in the `Current Task Objective`, `Analysis`, and `Implementation Plan` sections with the information obtained from the implementation plan, important details obtained in the previous analysis, and any additional information you need to complete the task.
+   - The `Current Task Objective` section will contain the objective of the current task, including the specific feature or functionality to be implemented.
+   - The `Analysis` section will contain an analysis of the current task obtained from the implementation plan, including detailed requirements, data model changes, and technical approach considerations on how to implement the current task.
+   - The `Implementation Plan` section will contain the extensive and very detailed full list of tasks to be done that will drive the implementation of the current task.
+   - The `Known Issues` section will contain issues found during the implementation of the current task, and tasks that are not yet fully implemented - tech debt.
+   - The `Lessons Learned` section will contain lessons learned during the implementation of the current task, including any mistakes made and how to avoid them in the future. Also specific documentation useful for the current task.
+
+4. You will then proceed to implement the tasks in the `Implementation Plan` section, and you will update the progress of the tasks in the Scratchpad file as you complete them.
+   - You will use todo markers to indicate the progress of every task. Each task is a checkbox item that you can check when you finish it. Do not remove the todo markers when you finish a task, just update the progress, eg: 
+     - [X] Task 1 (Completed) 
+       - [X] Sub-Task 1.1 
+       - [X] Sub-Task 1.2 
+     - [ ] Task 2 
+       - [X] Sub-Task 2.1 
+       - [ ] Sub-Task 2.2
+
+5. ⚠️ IMPORTANT: when you finish a subtask, YOU MUST ALWAYS UPDATE:
+- the progress of the task in `The Scratchpad` to keep track of the progress of the current task. This way you will have a clear overview of the tasks to be done, tasks in progress, and tasks already done.
+- the `Known Issues` section with any issues found during the implementation of the current task, and tasks that are not yet fully implemented (tech debt).
+- the `Lessons Learned` section with any lessons learned during the implementation of the current task, including any mistakes made and how to avoid them in the future. Also specific documentation useful for the current task. During your interaction with the user, if you find a piece of knowledge reusable in this project especially about a fix to a mistake you made or a correction you received, or a new way of doing things due to breaking changes in API, you should take note in the Lessons Learned section in the `project-active-context-and-progress.md` file so you will not make the same mistake again.
+
+6. ⚠️ IMPORTANT: when you finish a complete the list of tasks of an phase/epic/feature of the current implementation plan, YOU MUST ALWAYS UPDATE the `general documentation` knowledged base, specifically the `project-implementation-plan.md` file, with the progress of the active context. 
+
+That is, you will make sure that all the progress of the current task kept in the active context file `project-active-context-and-progress.md` ( tasks that are already done, and tasks not done; issues and lessons learned) are annotated in the `project-implementation-plan.md` file. This will ensure that the project is well-documented and kept fully updated, and that the AI agent (YOU) can easily access the necessary information to implement new features or make changes to the existing application. DO NOT REMOVE ANYTHING FROM THE `project-implementation-plan.md` file, just update the progress of the tasks and issues, and add new lessons learned.
 

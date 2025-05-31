@@ -67,3 +67,14 @@ For describing technical concepts, you should include Mermaid diagrams in this M
 ```
 
 ⚠️ IMPORTANT: The human user must manually add the new FEATURE PRD Markdown document to the project knowledge.
+
+---
+
+
+- Each task is a checkbox item that you can check when you finish it. 
+- They can have three types of tasks:
+  1. **Core tasks:** are the core tasks to complete the project.
+  2. **Refactors:** are tasks to refactor the code to improve the code quality.
+  3. **Bugs:** are tasks to fix bugs in the code.
+
+- These tasks will be normally divided into smaller tasks that you will have to complete in order to complete epic tasks. 
