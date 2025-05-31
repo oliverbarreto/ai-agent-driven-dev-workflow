@@ -1,5 +1,5 @@
 ---
-description: "General rules and methodology for the project that the AI Coding Assistant Agent must follow."
+description: "General rules and methodology for the project that the AI Coding Assistant Agent must always follow."
 globs: *
 alwaysApply: true
 ---
