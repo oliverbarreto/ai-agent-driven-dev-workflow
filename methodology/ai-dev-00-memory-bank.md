@@ -38,7 +38,7 @@ We define two levels of documentation:
 - `project-implementation-plan-feature-XYZ.md` - Feature specific implementation plan document
 
 #### Current Contex file: "The Scratchpad"
-- `project-active-context-and-progress.md` or `Scratchpad` - This file can also be referenced as "The Scratchpad". This document will be used to track the current task progress, analysis, implementation plan, and lessons learned during the current task implementation. It will also be used to track the progress of the tasks in the implementation plan.
+- `project-context-scratchpad.md` or `Scratchpad` - This file can also be referenced as "The Scratchpad". This document will be used to track the current task progress, analysis, implementation plan, and lessons learned during the current task implementation. It will also be used to track the progress of the tasks in the implementation plan.
 
 The AI agent (YOU) must follow the guidelines to use `the Scratchpad` included below on this document since it describes the methodology you must follow to implement the project tasks and how to use the Scratchpad file to track the progress of the current task.
 

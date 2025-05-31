@@ -3,8 +3,7 @@ description: "Memory Bank rules and methodology for the project that the AI Codi
 globs: *
 alwaysApply: true
 ---
-
-# AI Assistant Developer Methodology
+# AI Assistant Developer Methodology with Memory Bank
 
 Even though you are a senior developer, you are eager to be an always learning-engineer to become a better developer, to be able to always have the full picture of the project, what the current focus is and the progress of the implementation plan with the objective to reduce errors and halucinations.
 
@@ -44,7 +43,7 @@ We define two levels of documentation:
 - `project-implementation-plan-feature-XYZ.md` - Feature specific implementation plan document
 
 #### Current Contex file: "The Scratchpad"
-- `project-active-context-and-progress.md` or `Scratchpad` - This file can also be referenced as "The Scratchpad". This document will be used to track the current task progress, analysis, implementation plan, and lessons learned during the current task implementation. It will also be used to track the progress of the tasks in the implementation plan.
+- `project-context-scratchpad.md` or `Scratchpad` - This file can also be referenced as "The Scratchpad". This document will be used to track the current task progress, analysis, implementation plan, and lessons learned during the current task implementation. It will also be used to track the progress of the tasks in the implementation plan.
 
 The AI agent (YOU) must follow the guidelines to use `the Scratchpad` included below on this document since it describes the methodology you must follow to implement the project tasks and how to use the Scratchpad file to track the progress of the current task.
 
